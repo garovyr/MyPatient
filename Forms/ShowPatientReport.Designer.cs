@@ -1,6 +1,6 @@
 ﻿namespace MyPatient.Forms
 {
-    partial class ShowPatientSearchReport
+    partial class ShowPatientReport
     {
         /// <summary>
         /// Required designer variable.

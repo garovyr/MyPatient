@@ -64,7 +64,6 @@
             // patientsToolStripMenuItem
             // 
             patientsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addPatientToolStripMenuItem, searchPatientToolStripMenuItem });
-            patientsToolStripMenuItem.Enabled = false;
             patientsToolStripMenuItem.Name = "patientsToolStripMenuItem";
             patientsToolStripMenuItem.Size = new Size(84, 24);
             patientsToolStripMenuItem.Text = "Pacientes";
@@ -72,15 +71,16 @@
             // addPatientToolStripMenuItem
             // 
             addPatientToolStripMenuItem.Name = "addPatientToolStripMenuItem";
-            addPatientToolStripMenuItem.Size = new Size(217, 26);
+            addPatientToolStripMenuItem.Size = new Size(224, 26);
             addPatientToolStripMenuItem.Text = "Añadir un paciente";
             addPatientToolStripMenuItem.Click += addPatientToolStripMenuItem_Click;
             // 
             // searchPatientToolStripMenuItem
             // 
             searchPatientToolStripMenuItem.Name = "searchPatientToolStripMenuItem";
-            searchPatientToolStripMenuItem.Size = new Size(217, 26);
+            searchPatientToolStripMenuItem.Size = new Size(224, 26);
             searchPatientToolStripMenuItem.Text = "Buscar un paciente";
+            searchPatientToolStripMenuItem.Click += searchPatientToolStripMenuItem_Click;
             // 
             // Home
             // 

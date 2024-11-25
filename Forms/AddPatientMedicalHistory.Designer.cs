@@ -32,39 +32,41 @@
             lastNameLabel = new Label();
             firstNameLabel = new Label();
             firstNameTextBox = new TextBox();
-            label1 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            label3 = new Label();
-            textBox2 = new TextBox();
-            label4 = new Label();
-            numericUpDown1 = new NumericUpDown();
-            label5 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label6 = new Label();
-            label7 = new Label();
-            comboBox1 = new ComboBox();
-            groupBox1 = new GroupBox();
-            textBox7 = new TextBox();
-            label10 = new Label();
-            textBox5 = new TextBox();
-            label9 = new Label();
-            label8 = new Label();
-            textBox6 = new TextBox();
-            groupBox2 = new GroupBox();
-            textBox8 = new TextBox();
-            label11 = new Label();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            label12 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            label13 = new Label();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
+            birthdateLabel = new Label();
+            birthdateDateTimePicker = new DateTimePicker();
+            birthplaceLabel = new Label();
+            birthplaceTextBox = new TextBox();
+            addressLabel = new Label();
+            addressTextBox = new TextBox();
+            ageLabel = new Label();
+            ageNumericUpDown = new NumericUpDown();
+            weightLabel = new Label();
+            sizeLabel = new Label();
+            bloodGroupLabel = new Label();
+            bloodGroupComboBox = new ComboBox();
+            motherGroupBox = new GroupBox();
+            motherIdTextBox = new TextBox();
+            motherIdLabel = new Label();
+            motherLastNameTextBox = new TextBox();
+            motherFirstNameLabel = new Label();
+            motherLastNameLabel = new Label();
+            motherFirstNameTextBox = new TextBox();
+            fatherGroupBox = new GroupBox();
+            fatherIdLabel = new Label();
+            fatherIdTextBox = new TextBox();
+            fatherFistNameLabel = new Label();
+            fatherLastNameTextBox = new TextBox();
+            fatherFirstNameTextBox = new TextBox();
+            fatherLastNameLabel = new Label();
+            cancelButton = new Button();
+            acceptButton = new Button();
+            weightNumericUpDown = new NumericUpDown();
+            sizeNumericUpDown = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)ageNumericUpDown).BeginInit();
+            motherGroupBox.SuspendLayout();
+            fatherGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)weightNumericUpDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sizeNumericUpDown).BeginInit();
             SuspendLayout();
             // 
             // lastNameTextBox
@@ -101,313 +103,316 @@
             firstNameTextBox.Size = new Size(249, 27);
             firstNameTextBox.TabIndex = 7;
             // 
-            // label1
+            // birthdateLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(12, 62);
-            label1.Name = "label1";
-            label1.Size = new Size(152, 20);
-            label1.TabIndex = 11;
-            label1.Text = "Fecha de nacimiento";
+            birthdateLabel.AutoSize = true;
+            birthdateLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            birthdateLabel.Location = new Point(12, 62);
+            birthdateLabel.Name = "birthdateLabel";
+            birthdateLabel.Size = new Size(152, 20);
+            birthdateLabel.TabIndex = 11;
+            birthdateLabel.Text = "Fecha de nacimiento";
             // 
-            // dateTimePicker1
+            // birthdateDateTimePicker
             // 
-            dateTimePicker1.Location = new Point(12, 85);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(504, 27);
-            dateTimePicker1.TabIndex = 12;
+            birthdateDateTimePicker.Location = new Point(12, 85);
+            birthdateDateTimePicker.Name = "birthdateDateTimePicker";
+            birthdateDateTimePicker.Size = new Size(504, 27);
+            birthdateDateTimePicker.TabIndex = 12;
             // 
-            // label2
+            // birthplaceLabel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(522, 62);
-            label2.Name = "label2";
-            label2.Size = new Size(152, 20);
-            label2.TabIndex = 13;
-            label2.Text = "Lugar de nacimiento";
+            birthplaceLabel.AutoSize = true;
+            birthplaceLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            birthplaceLabel.Location = new Point(522, 62);
+            birthplaceLabel.Name = "birthplaceLabel";
+            birthplaceLabel.Size = new Size(152, 20);
+            birthplaceLabel.TabIndex = 13;
+            birthplaceLabel.Text = "Lugar de nacimiento";
             // 
-            // textBox1
+            // birthplaceTextBox
             // 
-            textBox1.Location = new Point(522, 85);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(504, 27);
-            textBox1.TabIndex = 14;
+            birthplaceTextBox.Location = new Point(522, 85);
+            birthplaceTextBox.Name = "birthplaceTextBox";
+            birthplaceTextBox.Size = new Size(504, 27);
+            birthplaceTextBox.TabIndex = 14;
             // 
-            // label3
+            // addressLabel
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.Location = new Point(12, 115);
-            label3.Name = "label3";
-            label3.Size = new Size(75, 20);
-            label3.TabIndex = 15;
-            label3.Text = "Domicilio";
+            addressLabel.AutoSize = true;
+            addressLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            addressLabel.Location = new Point(12, 115);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new Size(75, 20);
+            addressLabel.TabIndex = 15;
+            addressLabel.Text = "Domicilio";
             // 
-            // textBox2
+            // addressTextBox
             // 
-            textBox2.Location = new Point(12, 138);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(504, 81);
-            textBox2.TabIndex = 16;
+            addressTextBox.Location = new Point(12, 138);
+            addressTextBox.Multiline = true;
+            addressTextBox.Name = "addressTextBox";
+            addressTextBox.Size = new Size(504, 81);
+            addressTextBox.TabIndex = 16;
             // 
-            // label4
+            // ageLabel
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F);
-            label4.Location = new Point(522, 115);
-            label4.Name = "label4";
-            label4.Size = new Size(43, 20);
-            label4.TabIndex = 17;
-            label4.Text = "Edad";
+            ageLabel.AutoSize = true;
+            ageLabel.Font = new Font("Segoe UI", 9F);
+            ageLabel.Location = new Point(522, 115);
+            ageLabel.Name = "ageLabel";
+            ageLabel.Size = new Size(43, 20);
+            ageLabel.TabIndex = 17;
+            ageLabel.Text = "Edad";
             // 
-            // numericUpDown1
+            // ageNumericUpDown
             // 
-            numericUpDown1.Enabled = false;
-            numericUpDown1.Location = new Point(522, 138);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(249, 27);
-            numericUpDown1.TabIndex = 18;
+            ageNumericUpDown.Enabled = false;
+            ageNumericUpDown.Location = new Point(522, 138);
+            ageNumericUpDown.Name = "ageNumericUpDown";
+            ageNumericUpDown.Size = new Size(249, 27);
+            ageNumericUpDown.TabIndex = 18;
             // 
-            // label5
+            // weightLabel
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label5.Location = new Point(777, 115);
-            label5.Name = "label5";
-            label5.Size = new Size(42, 20);
-            label5.TabIndex = 19;
-            label5.Text = "Peso";
+            weightLabel.AutoSize = true;
+            weightLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            weightLabel.Location = new Point(777, 115);
+            weightLabel.Name = "weightLabel";
+            weightLabel.Size = new Size(42, 20);
+            weightLabel.TabIndex = 19;
+            weightLabel.Text = "Peso";
             // 
-            // textBox3
+            // sizeLabel
             // 
-            textBox3.Location = new Point(777, 138);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(249, 27);
-            textBox3.TabIndex = 20;
+            sizeLabel.AutoSize = true;
+            sizeLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            sizeLabel.Location = new Point(522, 168);
+            sizeLabel.Name = "sizeLabel";
+            sizeLabel.Size = new Size(41, 20);
+            sizeLabel.TabIndex = 22;
+            sizeLabel.Text = "Talla";
             // 
-            // textBox4
+            // bloodGroupLabel
             // 
-            textBox4.Location = new Point(522, 191);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(249, 27);
-            textBox4.TabIndex = 21;
+            bloodGroupLabel.AutoSize = true;
+            bloodGroupLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            bloodGroupLabel.Location = new Point(777, 168);
+            bloodGroupLabel.Name = "bloodGroupLabel";
+            bloodGroupLabel.Size = new Size(129, 20);
+            bloodGroupLabel.TabIndex = 23;
+            bloodGroupLabel.Text = "Grupo sanguineo";
             // 
-            // label6
+            // bloodGroupComboBox
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label6.Location = new Point(522, 168);
-            label6.Name = "label6";
-            label6.Size = new Size(41, 20);
-            label6.TabIndex = 22;
-            label6.Text = "Talla";
+            bloodGroupComboBox.FormattingEnabled = true;
+            bloodGroupComboBox.Items.AddRange(new object[] { "A", "B", "AB", "O" });
+            bloodGroupComboBox.Location = new Point(777, 191);
+            bloodGroupComboBox.Name = "bloodGroupComboBox";
+            bloodGroupComboBox.Size = new Size(249, 28);
+            bloodGroupComboBox.TabIndex = 24;
             // 
-            // label7
+            // motherGroupBox
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label7.Location = new Point(777, 168);
-            label7.Name = "label7";
-            label7.Size = new Size(129, 20);
-            label7.TabIndex = 23;
-            label7.Text = "Grupo sanguineo";
+            motherGroupBox.Controls.Add(motherIdTextBox);
+            motherGroupBox.Controls.Add(motherIdLabel);
+            motherGroupBox.Controls.Add(motherLastNameTextBox);
+            motherGroupBox.Controls.Add(motherFirstNameLabel);
+            motherGroupBox.Controls.Add(motherLastNameLabel);
+            motherGroupBox.Controls.Add(motherFirstNameTextBox);
+            motherGroupBox.Location = new Point(12, 225);
+            motherGroupBox.Name = "motherGroupBox";
+            motherGroupBox.Size = new Size(504, 213);
+            motherGroupBox.TabIndex = 25;
+            motherGroupBox.TabStop = false;
+            motherGroupBox.Text = "Madre";
             // 
-            // comboBox1
+            // motherIdTextBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "A", "B", "AB", "O" });
-            comboBox1.Location = new Point(777, 191);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(249, 28);
-            comboBox1.TabIndex = 24;
+            motherIdTextBox.Location = new Point(6, 152);
+            motherIdTextBox.Name = "motherIdTextBox";
+            motherIdTextBox.Size = new Size(492, 27);
+            motherIdTextBox.TabIndex = 32;
             // 
-            // groupBox1
+            // motherIdLabel
             // 
-            groupBox1.Controls.Add(textBox7);
-            groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(textBox6);
-            groupBox1.Location = new Point(12, 225);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(504, 213);
-            groupBox1.TabIndex = 25;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Madre";
+            motherIdLabel.AutoSize = true;
+            motherIdLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            motherIdLabel.Location = new Point(6, 129);
+            motherIdLabel.Name = "motherIdLabel";
+            motherIdLabel.Size = new Size(35, 20);
+            motherIdLabel.TabIndex = 31;
+            motherIdLabel.Text = "C. I.";
             // 
-            // textBox7
+            // motherLastNameTextBox
             // 
-            textBox7.Location = new Point(6, 152);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(492, 27);
-            textBox7.TabIndex = 32;
+            motherLastNameTextBox.Location = new Point(6, 99);
+            motherLastNameTextBox.Name = "motherLastNameTextBox";
+            motherLastNameTextBox.Size = new Size(492, 27);
+            motherLastNameTextBox.TabIndex = 30;
             // 
-            // label10
+            // motherFirstNameLabel
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label10.Location = new Point(6, 129);
-            label10.Name = "label10";
-            label10.Size = new Size(35, 20);
-            label10.TabIndex = 31;
-            label10.Text = "C. I.";
+            motherFirstNameLabel.AutoSize = true;
+            motherFirstNameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            motherFirstNameLabel.Location = new Point(6, 23);
+            motherFirstNameLabel.Name = "motherFirstNameLabel";
+            motherFirstNameLabel.Size = new Size(86, 20);
+            motherFirstNameLabel.TabIndex = 28;
+            motherFirstNameLabel.Text = "Nombre(s)";
             // 
-            // textBox5
+            // motherLastNameLabel
             // 
-            textBox5.Location = new Point(6, 99);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(492, 27);
-            textBox5.TabIndex = 30;
+            motherLastNameLabel.AutoSize = true;
+            motherLastNameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            motherLastNameLabel.Location = new Point(6, 76);
+            motherLastNameLabel.Name = "motherLastNameLabel";
+            motherLastNameLabel.Size = new Size(86, 20);
+            motherLastNameLabel.TabIndex = 29;
+            motherLastNameLabel.Text = "Apellido(s)";
             // 
-            // label9
+            // motherFirstNameTextBox
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label9.Location = new Point(6, 23);
-            label9.Name = "label9";
-            label9.Size = new Size(86, 20);
-            label9.TabIndex = 28;
-            label9.Text = "Nombre(s)";
+            motherFirstNameTextBox.Location = new Point(6, 46);
+            motherFirstNameTextBox.Name = "motherFirstNameTextBox";
+            motherFirstNameTextBox.Size = new Size(492, 27);
+            motherFirstNameTextBox.TabIndex = 27;
             // 
-            // label8
+            // fatherGroupBox
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label8.Location = new Point(6, 76);
-            label8.Name = "label8";
-            label8.Size = new Size(86, 20);
-            label8.TabIndex = 29;
-            label8.Text = "Apellido(s)";
+            fatherGroupBox.Controls.Add(fatherIdLabel);
+            fatherGroupBox.Controls.Add(fatherIdTextBox);
+            fatherGroupBox.Controls.Add(fatherFistNameLabel);
+            fatherGroupBox.Controls.Add(fatherLastNameTextBox);
+            fatherGroupBox.Controls.Add(fatherFirstNameTextBox);
+            fatherGroupBox.Controls.Add(fatherLastNameLabel);
+            fatherGroupBox.Location = new Point(522, 225);
+            fatherGroupBox.Name = "fatherGroupBox";
+            fatherGroupBox.Size = new Size(504, 213);
+            fatherGroupBox.TabIndex = 26;
+            fatherGroupBox.TabStop = false;
+            fatherGroupBox.Text = "Padre";
             // 
-            // textBox6
+            // fatherIdLabel
             // 
-            textBox6.Location = new Point(6, 46);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(492, 27);
-            textBox6.TabIndex = 27;
+            fatherIdLabel.AutoSize = true;
+            fatherIdLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            fatherIdLabel.Location = new Point(6, 129);
+            fatherIdLabel.Name = "fatherIdLabel";
+            fatherIdLabel.Size = new Size(35, 20);
+            fatherIdLabel.TabIndex = 33;
+            fatherIdLabel.Text = "C. I.";
             // 
-            // groupBox2
+            // fatherIdTextBox
             // 
-            groupBox2.Controls.Add(label13);
-            groupBox2.Controls.Add(textBox8);
-            groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(textBox9);
-            groupBox2.Controls.Add(textBox10);
-            groupBox2.Controls.Add(label12);
-            groupBox2.Location = new Point(522, 225);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(504, 213);
-            groupBox2.TabIndex = 26;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Padre";
+            fatherIdTextBox.Location = new Point(6, 152);
+            fatherIdTextBox.Name = "fatherIdTextBox";
+            fatherIdTextBox.Size = new Size(492, 27);
+            fatherIdTextBox.TabIndex = 37;
             // 
-            // textBox8
+            // fatherFistNameLabel
             // 
-            textBox8.Location = new Point(6, 152);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(492, 27);
-            textBox8.TabIndex = 37;
+            fatherFistNameLabel.AutoSize = true;
+            fatherFistNameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            fatherFistNameLabel.Location = new Point(6, 23);
+            fatherFistNameLabel.Name = "fatherFistNameLabel";
+            fatherFistNameLabel.Size = new Size(86, 20);
+            fatherFistNameLabel.TabIndex = 34;
+            fatherFistNameLabel.Text = "Nombre(s)";
             // 
-            // label11
+            // fatherLastNameTextBox
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label11.Location = new Point(6, 23);
-            label11.Name = "label11";
-            label11.Size = new Size(86, 20);
-            label11.TabIndex = 34;
-            label11.Text = "Nombre(s)";
+            fatherLastNameTextBox.Location = new Point(6, 99);
+            fatherLastNameTextBox.Name = "fatherLastNameTextBox";
+            fatherLastNameTextBox.Size = new Size(492, 27);
+            fatherLastNameTextBox.TabIndex = 36;
             // 
-            // textBox9
+            // fatherFirstNameTextBox
             // 
-            textBox9.Location = new Point(6, 99);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(492, 27);
-            textBox9.TabIndex = 36;
+            fatherFirstNameTextBox.Location = new Point(6, 46);
+            fatherFirstNameTextBox.Name = "fatherFirstNameTextBox";
+            fatherFirstNameTextBox.Size = new Size(492, 27);
+            fatherFirstNameTextBox.TabIndex = 33;
             // 
-            // textBox10
+            // fatherLastNameLabel
             // 
-            textBox10.Location = new Point(6, 46);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(492, 27);
-            textBox10.TabIndex = 33;
+            fatherLastNameLabel.AutoSize = true;
+            fatherLastNameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            fatherLastNameLabel.Location = new Point(6, 76);
+            fatherLastNameLabel.Name = "fatherLastNameLabel";
+            fatherLastNameLabel.Size = new Size(86, 20);
+            fatherLastNameLabel.TabIndex = 35;
+            fatherLastNameLabel.Text = "Apellido(s)";
             // 
-            // label12
+            // cancelButton
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label12.Location = new Point(6, 76);
-            label12.Name = "label12";
-            label12.Size = new Size(86, 20);
-            label12.TabIndex = 35;
-            label12.Text = "Apellido(s)";
+            cancelButton.Location = new Point(937, 459);
+            cancelButton.Name = "cancelButton";
+            cancelButton.Size = new Size(94, 29);
+            cancelButton.TabIndex = 27;
+            cancelButton.Text = "Cancelar";
+            cancelButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // acceptButton
             // 
-            button1.Location = new Point(937, 459);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 27;
-            button1.Text = "Cancelar";
-            button1.UseVisualStyleBackColor = true;
+            acceptButton.Location = new Point(837, 459);
+            acceptButton.Name = "acceptButton";
+            acceptButton.Size = new Size(94, 29);
+            acceptButton.TabIndex = 28;
+            acceptButton.Text = "Aceptar";
+            acceptButton.UseVisualStyleBackColor = true;
+            acceptButton.Click += acceptButton_Click;
             // 
-            // button2
+            // weightNumericUpDown
             // 
-            button2.Location = new Point(837, 459);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 28;
-            button2.Text = "Aceptar";
-            button2.UseVisualStyleBackColor = true;
+            weightNumericUpDown.Location = new Point(777, 139);
+            weightNumericUpDown.Name = "weightNumericUpDown";
+            weightNumericUpDown.Size = new Size(249, 27);
+            weightNumericUpDown.TabIndex = 29;
             // 
-            // label13
+            // sizeNumericUpDown
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label13.Location = new Point(6, 129);
-            label13.Name = "label13";
-            label13.Size = new Size(35, 20);
-            label13.TabIndex = 33;
-            label13.Text = "C. I.";
+            sizeNumericUpDown.Location = new Point(522, 191);
+            sizeNumericUpDown.Name = "sizeNumericUpDown";
+            sizeNumericUpDown.Size = new Size(249, 27);
+            sizeNumericUpDown.TabIndex = 30;
             // 
             // AddPatientMedicalHistory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1043, 500);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Controls.Add(comboBox1);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(label5);
-            Controls.Add(numericUpDown1);
-            Controls.Add(label4);
-            Controls.Add(textBox2);
-            Controls.Add(label3);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(label1);
+            Controls.Add(sizeNumericUpDown);
+            Controls.Add(weightNumericUpDown);
+            Controls.Add(acceptButton);
+            Controls.Add(cancelButton);
+            Controls.Add(fatherGroupBox);
+            Controls.Add(motherGroupBox);
+            Controls.Add(bloodGroupComboBox);
+            Controls.Add(bloodGroupLabel);
+            Controls.Add(sizeLabel);
+            Controls.Add(weightLabel);
+            Controls.Add(ageNumericUpDown);
+            Controls.Add(ageLabel);
+            Controls.Add(addressTextBox);
+            Controls.Add(addressLabel);
+            Controls.Add(birthplaceTextBox);
+            Controls.Add(birthplaceLabel);
+            Controls.Add(birthdateDateTimePicker);
+            Controls.Add(birthdateLabel);
             Controls.Add(lastNameTextBox);
             Controls.Add(lastNameLabel);
             Controls.Add(firstNameLabel);
             Controls.Add(firstNameTextBox);
             Name = "AddPatientMedicalHistory";
             Text = "Historia Médica";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ageNumericUpDown).EndInit();
+            motherGroupBox.ResumeLayout(false);
+            motherGroupBox.PerformLayout();
+            fatherGroupBox.ResumeLayout(false);
+            fatherGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)weightNumericUpDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sizeNumericUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -418,35 +423,35 @@
         private Label lastNameLabel;
         private Label firstNameLabel;
         private TextBox firstNameTextBox;
-        private Label label1;
-        private DateTimePicker dateTimePicker1;
-        private Label label2;
-        private TextBox textBox1;
-        private Label label3;
-        private TextBox textBox2;
-        private Label label4;
-        private NumericUpDown numericUpDown1;
-        private Label label5;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Label label6;
-        private Label label7;
-        private ComboBox comboBox1;
-        private GroupBox groupBox1;
-        private TextBox textBox7;
-        private Label label10;
-        private TextBox textBox5;
-        private Label label9;
-        private Label label8;
-        private TextBox textBox6;
-        private GroupBox groupBox2;
-        private TextBox textBox8;
-        private Label label11;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private Label label12;
-        private Button button1;
-        private Button button2;
-        private Label label13;
+        private Label birthdateLabel;
+        private DateTimePicker birthdateDateTimePicker;
+        private Label birthplaceLabel;
+        private TextBox birthplaceTextBox;
+        private Label addressLabel;
+        private TextBox addressTextBox;
+        private Label ageLabel;
+        private NumericUpDown ageNumericUpDown;
+        private Label weightLabel;
+        private Label sizeLabel;
+        private Label bloodGroupLabel;
+        private ComboBox bloodGroupComboBox;
+        private GroupBox motherGroupBox;
+        private TextBox motherIdTextBox;
+        private Label motherIdLabel;
+        private TextBox motherLastNameTextBox;
+        private Label motherFirstNameLabel;
+        private Label motherLastNameLabel;
+        private TextBox motherFirstNameTextBox;
+        private GroupBox fatherGroupBox;
+        private TextBox fatherIdTextBox;
+        private Label fatherFistNameLabel;
+        private TextBox fatherLastNameTextBox;
+        private TextBox fatherFirstNameTextBox;
+        private Label fatherLastNameLabel;
+        private Button cancelButton;
+        private Button acceptButton;
+        private Label fatherIdLabel;
+        private NumericUpDown weightNumericUpDown;
+        private NumericUpDown sizeNumericUpDown;
     }
 }

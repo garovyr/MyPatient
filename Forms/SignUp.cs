@@ -30,19 +30,19 @@ namespace MyPatient
                 return;
             }
 
-            if (prefessionComboBox.SelectionLength < 1)
-            {
-                prefessionComboBox.Focus();
+            //if (prefessionComboBox.SelectionLength < 1)
+            //{
+            //    prefessionComboBox.Focus();
 
-                return;
-            }
+            //    return;
+            //}
 
-            if (phoneCountryComboBox.SelectionLength < 1)
-            {
-                phoneCountryComboBox.Focus();
+            //if (phoneCountryComboBox.SelectionLength < 1)
+            //{
+            //    phoneCountryComboBox.Focus();
 
-                return;
-            }
+            //    return;
+            //}
 
             if (phoneNumberTextBox.TextLength < 1)
             {
@@ -65,7 +65,11 @@ namespace MyPatient
                 return;
             }
 
-            Close();
+            Hide();
+
+            var window = new Home();
+
+            window.Show();
         }
 
         private void showPasswordCheckBox_CheckedChanged(object sender, EventArgs e)

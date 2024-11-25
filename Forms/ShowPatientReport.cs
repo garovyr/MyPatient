@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyPatient.Forms
 {
-    public partial class ShowPatientSearchReport : Form
+    public partial class ShowPatientReport : Form
     {
-        public ShowPatientSearchReport()
+        public ShowPatientReport()
         {
             InitializeComponent();
         }

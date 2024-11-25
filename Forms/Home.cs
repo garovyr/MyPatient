@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyPatient.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,16 @@ namespace MyPatient
         private void addPatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var window = new AddPatient();
+
+            window.Show();
+        }
+
+        private void searchPatientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var window = new SearchPatient
+            {
+                MdiParent = this,
+            };
 
             window.Show();
         }

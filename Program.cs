@@ -12,7 +12,7 @@ namespace MyPatient
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            Application.Run(new Home());
+            Application.Run(new SignUp());
         }
     }
 }
