@@ -18,8 +18,6 @@ namespace MyPatient
         public Home()
         {
             InitializeComponent();
-
-            updateSignStatus();
         }
 
         private void addPatientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,29 +35,6 @@ namespace MyPatient
             };
 
             window.Show();
-        }
-
-        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            signed = false;
-
-            updateSignStatus();
-        }
-
-        //
-
-        private void updateSignStatus()
-        {
-            if (!signed)
-            {
-                var window = new SignUp();
-
-                window.Show();
-
-                signed = true;
-            }
-
-            patientsToolStripMenuItem.Enabled = signed;
         }
     }
 }

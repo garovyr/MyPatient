@@ -59,7 +59,6 @@
             signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
             signOutToolStripMenuItem.Size = new Size(224, 26);
             signOutToolStripMenuItem.Text = "Cerrar sesión";
-            signOutToolStripMenuItem.Click += signOutToolStripMenuItem_Click;
             // 
             // patientsToolStripMenuItem
             // 

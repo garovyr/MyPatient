@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyPatient.Forms
+namespace MyPatient
 {
-    public partial class SearchPatient : Form
+    public partial class ShowPatientBackground : Form
     {
-        public SearchPatient()
+        public ShowPatientBackground()
         {
             InitializeComponent();
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var window = new ShowPatient();
-
-            window.Show();
         }
     }
 }

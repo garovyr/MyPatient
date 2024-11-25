@@ -53,18 +53,21 @@
             medicalHistoryToolStripMenuItem.Name = "medicalHistoryToolStripMenuItem";
             medicalHistoryToolStripMenuItem.Size = new Size(128, 24);
             medicalHistoryToolStripMenuItem.Text = "Historia Médica";
+            medicalHistoryToolStripMenuItem.Click += medicalHistoryToolStripMenuItem_Click;
             // 
             // backgroundToolStripMenuItem
             // 
             backgroundToolStripMenuItem.Name = "backgroundToolStripMenuItem";
             backgroundToolStripMenuItem.Size = new Size(113, 24);
             backgroundToolStripMenuItem.Text = "Antecedentes";
+            backgroundToolStripMenuItem.Click += backgroundToolStripMenuItem_Click_2;
             // 
             // vaccineToolStripMenuItem
             // 
             vaccineToolStripMenuItem.Name = "vaccineToolStripMenuItem";
             vaccineToolStripMenuItem.Size = new Size(76, 24);
             vaccineToolStripMenuItem.Text = "Vacunas";
+            vaccineToolStripMenuItem.Click += vaccineToolStripMenuItem_Click_2;
             // 
             // reportsToolStripMenuItem
             // 
@@ -76,14 +79,16 @@
             // addReportToolStripMenuItem
             // 
             addReportToolStripMenuItem.Name = "addReportToolStripMenuItem";
-            addReportToolStripMenuItem.Size = new Size(224, 26);
+            addReportToolStripMenuItem.Size = new Size(209, 26);
             addReportToolStripMenuItem.Text = "Añadir un reporte";
+            addReportToolStripMenuItem.Click += addReportToolStripMenuItem_Click;
             // 
             // searchReportToolStripMenuItem
             // 
             searchReportToolStripMenuItem.Name = "searchReportToolStripMenuItem";
             searchReportToolStripMenuItem.Size = new Size(209, 26);
             searchReportToolStripMenuItem.Text = "Buscar un reporte";
+            searchReportToolStripMenuItem.Click += searchReportToolStripMenuItem_Click;
             // 
             // ShowPatient
             // 
@@ -93,7 +98,7 @@
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             Name = "ShowPatient";
-            Text = "Ver paciente";
+            Text = "Ver un paciente";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

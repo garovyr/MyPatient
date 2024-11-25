@@ -1,6 +1,6 @@
 ﻿namespace MyPatient.Forms
 {
-    partial class SearchPatient
+    partial class SearchPatientReport
     {
         /// <summary>
         /// Required designer variable.
@@ -28,72 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ListViewItem listViewItem1 = new ListViewItem("Angel Miguel");
-            listView1 = new ListView();
-            textBox1 = new TextBox();
+            ListViewItem listViewItem1 = new ListViewItem(new string[] { "12/11/2024", "7" }, -1);
+            dateTimePicker1 = new DateTimePicker();
             label1 = new Label();
             button1 = new Button();
+            listView1 = new ListView();
             columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
             SuspendLayout();
             // 
-            // listView1
+            // dateTimePicker1
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1 });
-            listView1.Items.AddRange(new ListViewItem[] { listViewItem1 });
-            listView1.Location = new Point(12, 66);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(776, 372);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Tile;
-            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(12, 32);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(676, 27);
-            textBox1.TabIndex = 1;
+            dateTimePicker1.Location = new Point(12, 32);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(676, 27);
+            dateTimePicker1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(32, 20);
+            label1.Size = new Size(128, 20);
             label1.TabIndex = 2;
-            label1.Text = "C. I.";
+            label1.Text = "Fecha de creacion";
             // 
             // button1
             // 
-            button1.Location = new Point(694, 31);
+            button1.Location = new Point(694, 33);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
-            button1.TabIndex = 3;
+            button1.TabIndex = 4;
             button1.Text = "Buscar";
             button1.UseVisualStyleBackColor = true;
             // 
-            // SearchPatient
+            // listView1
+            // 
+            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
+            listView1.Items.AddRange(new ListViewItem[] { listViewItem1 });
+            listView1.Location = new Point(12, 65);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(776, 373);
+            listView1.TabIndex = 5;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Tile;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "Fecha";
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Version";
+            // 
+            // SearchPatientReport
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listView1);
             Controls.Add(button1);
             Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(listView1);
-            Name = "SearchPatient";
-            Text = "SearchPatient";
+            Controls.Add(dateTimePicker1);
+            Name = "SearchPatientReport";
+            Text = "SearchPatientReport";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ListView listView1;
-        private TextBox textBox1;
+        private DateTimePicker dateTimePicker1;
         private Label label1;
         private Button button1;
+        private ListView listView1;
         private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
     }
 }

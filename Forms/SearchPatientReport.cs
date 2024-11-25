@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace MyPatient.Forms
 {
-    public partial class SearchPatient : Form
+    public partial class SearchPatientReport : Form
     {
-        public SearchPatient()
+        public SearchPatientReport()
         {
             InitializeComponent();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var window = new ShowPatient();
+            var window = new ShowPatientReport();
 
             window.Show();
         }

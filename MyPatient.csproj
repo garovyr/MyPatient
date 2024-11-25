@@ -8,4 +8,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="Forms\ShowPatientVaccine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ShowPatientMedicalHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ShowPatientBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>

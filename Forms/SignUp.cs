@@ -65,6 +65,13 @@ namespace MyPatient
                 return;
             }
 
+            //
+
+            if (firstPasswordTextBox.Text != lastPasswordTextBox.Text)
+            {
+                return;
+            }
+
             Hide();
 
             var window = new Home();
